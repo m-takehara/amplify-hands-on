@@ -23,5 +23,34 @@
 				}
 			}
 		}
+	},
+	"predictions": {
+		"translateText50bbeb19": {
+			"providerPlugin": "awscloudformation",
+			"service": "Translate",
+			"convertType": "translateText"
+		},
+		"identifyLabels755eb7fa": {
+			"providerPlugin": "awscloudformation",
+			"service": "Rekognition",
+			"dependsOn": [],
+			"identifyType": "identifyLabels"
+		},
+		"identifyTextda2c9eba": {
+			"providerPlugin": "awscloudformation",
+			"service": "Rekognition",
+			"dependsOn": [],
+			"identifyType": "identifyText"
+		},
+		"interpretText0335f44c": {
+			"providerPlugin": "awscloudformation",
+			"service": "Comprehend",
+			"interpretType": "interpretText"
+		},
+		"speechGenerator96146c2f": {
+			"providerPlugin": "awscloudformation",
+			"service": "Polly",
+			"convertType": "speechGenerator"
+		}
 	}
 }
